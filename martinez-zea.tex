@@ -1,0 +1,147 @@
+%Gabriel Zea CV
+%
+%Uses moderncv package
+%
+%To avoid problems make sure the texlive-fonts texlive-latexextra packages are installed
+%
+%ChangeLog
+%	2.11.08	Version inicial
+%       3.5.09 update
+
+\documentclass[10pt,letter]{moderncv}
+\moderncvtheme[grey]{casual}                 
+
+% character encoding
+\usepackage[utf8]{inputenc}   
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{ }
+\familyname{ }
+%\title{Artista electr\'{o}nico}
+\address{San Jose 382 piso 2. Buenos Aires, Argentina}{1076}    
+\phone{(54) 9 1143825128}                     
+\email{cmart@decolector.net, zea@randomlab.net}                     
+\extrainfo{http://martinez-zea.info} % optional, remove the line if not wanted
+%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the 
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+% the ConTeXt symbol
+\def\ConTeXt{%
+  C%
+  \kern-.0333emo%
+  \kern-.0333emn%
+  \kern-.0667em\TeX%
+  \kern-.0333emt}
+
+% slanted small caps (only with roman family; the sans serif font doesn't exists :-()
+%\usepackage{slantsc}
+%\DeclareFontFamily{T1}{myfont}{}
+%\DeclareFontShape{T1}{myfont}{m}{scsl}{ <-> cork-lmssqbo8}{}
+%\usefont{T1}{myfont}{m}{scsl}Testing the font
+
+% command and color used in this document, independently from moderncv 
+\definecolor{see}{rgb}{0.0,0.5,0.5}% for web links
+\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}% for text subscripts
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+
+\section{Bio}
+{}{martinez-zea es un colectivo integrado por Camilo Martinez (Bogotá, Colombia 1978 ) y Gabriel Zea (Bogota, Colombia 1981). Desde el 2006 trabajan con tecnologías libres en proyectos que involucran colaboración con personas y grupos provenientes de diversos campos del arte y fuera de el. Su trabajo se basa en procesos de apropiación, experimentación con la tecnología que implican el desarrollo de herramientas propias de software o hardware. Sus proyectos se insertan en diferentes contextos de difusión o interacción. Actualmente viven y trabajan en Buenos Aires, Argentina.}{}{}{}{}
+
+%%% Educacion
+%\section{Integrantes}
+%\cventry{ }{Camilo Martinez}{Bogot\'{a}}{1979}{}{}
+%\cventry{ }{Gabriel Zea}{Bogot\'{a}}{1981}{}{}
+
+%%%Expos
+%%Solo
+\section{Exposiciones Individuales}
+\cventry{2009}{Clap}{Centro Colombo Americano}{Bogot\'{a}}{Colombia}{}
+\cventry{2008}{El Polarizador}{Galeria laLocalidad}{Bogot\'{a}}{Colombia}{} 
+\cventry{2007}{Proyecto BereBere}{Alianza Francesa}{Medell\'{i}n}{Colombia}{} 
+
+%%Group
+\section{Exposiciones Colectivas}
+% 2012
+\cventry{2012}{Estarter \#3}{Common Room}{Bandung}{Indonesia}{}{}
+\cventry{2012}{Entornos ficcionales para realidades complejas}{Centro de arte contempor\'{a}neo de Quito}{Quito}{Ecuador}{}{}
+\cventry{2012}{XI Bienal de la Habana}{Curadur\'{i}a: Open Score}{La Habana}{Cuba}{}{}
+% 2011
+\cventry{2011}{Festival TransitioMX}{Afecciones colaterales}{Ciudad de M\'{e}xico}{Mexico}{}{}
+\cventry{2011}{Fax}{South London Gallery}{Londres}{U.K}{}{}
+\cventry{2011}{Multiplicidades}{Estacion Belgrano}{Santa Fe}{Argentina}{}{}
+\cventry{2011}{Paisaje h\'{i}brido / h\'{a}bitat modular}{Centro cultural Recoleta}{Buenos Aires}{Argentina}{}{}
+\cventry{2011}{Games}{Galer\'{i}a Objeto A}{Buenos Aires}{Argentina}{}{}
+% 2010
+\cventry{2010}{Interactivos?}{Centoequatro}{Belo Horizonte}{Brasil}{}{}
+\cventry{2010}{CCEBA MediaLAB proyectos 2008-2010}{Colaboracit\'{o}n con Leonello Zambon}{CCEBA Balcarce}{Buenos Aires}{Argentina}{}
+\cventry{2010}{Arte Camara}{Feria internacional de arte de Bogota}{Bogot\'{a}}{Colombia}{}{}
+\cventry{2010}{Entre pontos}{JA.CA}{Jardim Canada}{Belo Horizonte}{Brasil}{}
+% 2009
+\cventry{2009}{Bienal ASAB, altas, medias y bajas tecnolog\'{i}as}{Escuela Superior de artes de Bogot\'{a}}{Bogot\'{a}}{Colombia}{}{}
+% 2008
+\cventry{2008}{41 Sal\'{o}n Nacional de Artistas}{Cali}{Colombia}{}{}
+\cventry{2008}{Festival de cine de Cartagena. Visualizaciones del proyecto BereBere}{Cartagena}{Colombia}{}{}
+% 2007
+\cventry{2007-2008}{Net Art Colombia: es feo y no le gusta el cursor}{Biblioteca Luis Angel Arango}{http://www.artenlared.org/}{}{}
+\cventry{2007}{Conflux Festival}{The change you want to see}{Brooklin}{http://www.confluxfestival.org/conflux2007/author/alejandro-duque/}{Estados Unidos} 
+\cventry{2007}{Transmisiones}{XII Salones regionales de Artistas}{Bogot\'{a}/Boyaca}{http://transmisiones.org}{Colombia} 
+
+\section{Premios y galardones}
+\cventry{2009}{Mencion}{Bienal ASAB, altas, medias y bajas tecnolog\'{i}as}{Escuela Superior de artes de Bogot\'{a}}{Bogot\'{a}}{}{} 
+
+\section{Presentaciones en vivo}
+\cventry{2009}{Sin Titulo: Live coding sobre la musica de Mauricio Alvarez}{Centro Colombo Americano}{Bogot\'{a}}{}{}
+\cventry{2008}{Karaoke: Ejercicios de improvisaci\'{o}n}{Matik-Matik}{Bogot\'{a}}{}{}
+\cventry{2008}{DataJam, proyecto BereBere}{interpretaci\'{o}n de datos del BereBere en audio y video en tiempo real, transmitido via streaming a Bassel}{http://matik-matik.blogspot.com/2008/05/100508-1030-am-data-jam-berebere.html}{}{}
+
+%%%Residencias
+\section{Residencias}
+\cventry{2010}{Interactivos?BH 2010}{Marginalialab}{Belo Horizonte}{Brazil}{}
+\cventry{2010}{Programa de residencias internacionales}{JA.CA – Jardim Canada Centro de Arte}{Belo Horizonte}{Brasil}{}
+\cventry{2007}{Residencia en el Encuentro MDE 07}{Medelli\'{i}n}{Colombia}{}{}
+
+%%%Conferencias
+\section{Conferencias - Seminarios}
+\cventry{2011}{Infra || super << estructuras}{Seminario Internacional de dise\~{n}o y pol\'{i}tica}{Belo Horizonte}{Brasil}{}
+\cventry{2010}{Proyecto BereBere}{Festival Arte.Mov}{Belo Horizonte}{Brasil}{}
+\cventry{2010}{Est\'{e}tica digital}{Maestria en diseno y creaci\'{o}n interactiva}{Universidad de Caldas}{Manizales}{}
+\cventry{2008}{Est\'{e}tica digital}{Maestria en diseno y creaci\'{o}n interactiva}{Universidad de Caldas}{Manizales}{}
+\cventry{2008}{Ghostbusters}{Festival internacional de cine de Cartagena}{Cartagena}{}{}
+\cventry{2007}{Conversatorio del proyecto BereBere}{Encuentro MDE 07}{casa del encuentro}{Medell\'{i}n}{}
+
+\section{Talleres}
+\cventry{2012}{Taller de artes vivas}{Lab Sur Lab}{Centro de arte contempor\'{a}neo de Quito}{Quito}{Ecuador}{}
+\cventry{2012}{Cosas que envian y reciben mensajes}{Plataforma Bogota}{http://plataformabogota.org/index.php/convocatorias/4-convocatorias-en-curso/45-a-cargo-de-camilo-martinez-y-gabriel-zea}{Bogot\'{a}}{Colombia}
+\cventry{2012}{Agregaci\'{o}n urbana}{Festival Bogotrax}{http://bogotrax.org}{Bogot\'{a}}{Colombia}
+\cventry{2011}{Agregaci\'{o}n urbana}{Mostra de Design}{http://www.mostradedesign.com.br/2011/programacao/workshops}{Belo Horizonte}{Brasil}
+\cventry{2008}{Mapeo Subjetivo}{Festival Internacional de la Imagen}{http://www.festivaldelaimagen.com/home.php}{Manizales}{}
+\cventry{2008}{WebRadio y Linux en Vivo}{Festival Bogotrax}{http://www.alice-dsl.net/lakrisis/bogotrax/pagintro/talleres.html}{Bogot\'{a}}{}
+\cventry{2007}{Sutatenza Sin Cables: taller de antenas WiFi}{Sal\'{o}n Regional de artistas zona centro}{http://transmisiones.org/html/talleres.htm}{Sutatenza}{}
+
+%%%Prensa
+\section{Prensa y  m\'{e}dios}
+\cventry{}{Satellite Voyeurism - Workshop Documentation}{Hartware MedienKunstVerein, Francis Hunger}{2008}{http://www.hmkv.de}{}
+\cventry{}{Seres H\'{i}bridos. El niuton en 241 palabras}{El niuton.com}{2008}{ISSN 1909-504X}{}
+\cventry{}{Giroscopio}{Entrevista sobre BereBere}{Unimedios TV}{25 de julio de 2008}{}
+\cventry{}{Apuntes sobre arte sonoro}{Vive.in}{Bogota}{}{}
+\cventry{}{Arte, diseno y tecnologia se encontraran en el Festival Internacional de la Imagen}{El Tiempo}{10 de marzo de 2008}{Bogota}{}
+\cventry{}{Siga la ruta de la cultura}{El Universal}{29 de febrero de 2008}{Cartagena}{}
+\cventry{}{Siga la ruta de la cultura}{El Universal}{25 de febrero de 2008}{Cartagena}{}
+\cventry{}{SLOW}{Revista: El niuton ed. 05}{http://elniuton.com/contenido.php?ed=05}{}{}
+\cventry{}{Wandering the streets of Medellin}{We make money not art}{Regine Debatty}{http://www.we-make-money-not-art.com/archives/2007/06/berebere-es-un.php}{}
+\cventry{}{Arte para los sentidos}{Peri\'{o}dico El Colombiano}{Medellin}{3 de junio de 2007}{}
+
+\end{document}
+

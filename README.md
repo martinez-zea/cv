@@ -1,4 +1,4 @@
 cv
 ==
 
-!mz cv (latex source)
+martinez-zea cv (latex source)
